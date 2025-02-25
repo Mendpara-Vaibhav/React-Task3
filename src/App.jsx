@@ -31,7 +31,7 @@ function App() {
             name="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Enter country name"
+            placeholder="Enter name"
             required
           />
         </label>
@@ -54,7 +54,7 @@ function App() {
         <button type="submit">Submit</button>
       </form>
 
-      <div>
+      <div className="row">
         <table>
           <thead>
             <tr>
@@ -79,10 +79,8 @@ function App() {
               ))}
           </tbody>
         </table>
-      </div>
 
-      <div>
-        <table>
+        <table className="column">
           <thead>
             <tr>
               <th>City</th>

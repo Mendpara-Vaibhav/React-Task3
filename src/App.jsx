@@ -16,8 +16,13 @@ function App() {
 
   const handleShift = (index) => {
     const updatedList = [...arrList];
-    updatedList[index].type =
-      updatedList[index].type === "Country" ? "City" : "Country";
+    // updatedList[index].type =
+    //   updatedList[index].type === "Country" ? "City" : "Country";
+    if (updatedList[index].type === "Country") {
+      updatedList[index].type = "City";
+    } else {
+      updatedList[index].type = "Country";
+    }
     setArrList(updatedList);
   };
 
